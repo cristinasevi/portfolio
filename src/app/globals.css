@@ -5,12 +5,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background-scroll: #cecece;
+  --scrollbar-track: #ebebeb;
+  --scrollbar-thumb: #cecece;
+  --scrollbar-thumb-hover: #a0a0a0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --background-scroll: #1e1e1e;
+    --scrollbar-track: #121212;
+    --scrollbar-thumb: #333;
+    --scrollbar-thumb-hover: #555;
   }
 }
 
@@ -18,4 +26,33 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-inter), sans-serif;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: var(--background-scroll);
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+body {
+  cursor: url('/images/cursor.svg'), auto;
+}
+
+a, button {
+  cursor: url('/images/pointer.svg'), pointer;
 }
