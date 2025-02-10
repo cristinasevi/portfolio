@@ -35,7 +35,7 @@ export default function Homepage() {
         <section id="homepage" className="w-full min-h-screen flex items-center justify-center">
             <div className="relative">
                 <div className="relative">
-                    <div className=" relative w-[20rem] h-[250px] md:w-[32rem] md:h-[20rem] rounded-lg bg-cover bg-center bg-no-repeat">
+                    <div className="relative w-[20rem] h-[250px] md:w-[32rem] md:h-[20rem] rounded-lg bg-cover bg-center bg-no-repeat">
                         <Image 
                             src="/images/avatar-dither.png" 
                             alt="Avatar" 
@@ -77,7 +77,9 @@ export default function Homepage() {
                 </div>
             </div>
             <button onClick={handleScroll} className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center">
-                <span className="uppercase text-[10px] tracking-widest">SCROLL</span>
+                <div className="animate-bounce">
+                    <span className="uppercase text-[10px] tracking-widest">SCROLL</span>
+                </div>
                 <div className="w-2 h-2 border-b-[1.5px] border-r-[1.5px] border-foreground rotate-45 mx-auto"></div>
             </button>
         </section>

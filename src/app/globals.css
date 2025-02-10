@@ -28,6 +28,15 @@ body {
   font-family: var(--font-inter), sans-serif;
 }
 
+html {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;  
+}
+
 html::-webkit-scrollbar {
   width: 8px;
   height: 8px;
