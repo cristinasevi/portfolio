@@ -22,10 +22,18 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-inter), sans-serif;
+@layer base {
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: var(--font-inter), sans-serif;
+    cursor: url("/images/cursor.svg"), auto;
+  }
+
+  a,
+  button {
+    cursor: url("/images/pointer.svg"), pointer;
+  }
 }
 
 html {
@@ -56,12 +64,4 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover,
 html::-webkit-scrollbar-thumb:active {
   background-color: var(--scrollbar-thumb-hover);
-}
-
-body {
-  cursor: url('/images/cursor.svg'), auto;
-}
-
-a, button {
-  cursor: url('/images/pointer.svg'), pointer;
 }

@@ -77,7 +77,7 @@ export default function Homepage() {
                 </div>
             </div>
             <button onClick={handleScroll} className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center">
-                <div className="animate-bounce">
+                <div className="animate-pulse"> {/* animate-bounce */}
                     <span className="uppercase text-[10px] tracking-widest">SCROLL</span>
                 </div>
                 <div className="w-2 h-2 border-b-[1.5px] border-r-[1.5px] border-foreground rotate-45 mx-auto"></div>
