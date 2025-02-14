@@ -1,5 +1,3 @@
-import Links from "./links"
-
 export default function About() {
   return (
     <section id="about" className="w-full min-h-screen flex items-center justify-center px-6 md:px-16">
@@ -22,9 +20,6 @@ export default function About() {
             THAT ARE BOTH VISUALLY
             APPEALING AND <span className="text-[#0000FF] font-normal">USER-FRIENDLY</span>.
           </p>
-        </div>
-        <div className="mt-20 w-full">
-          <Links/>
         </div>
       </div>
     </section>

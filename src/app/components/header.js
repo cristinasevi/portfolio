@@ -22,7 +22,7 @@ export default function Header(){
                     <ul className="flex justify-end items-center text-[12px] gap-10">
                         <li><Link href="#about" className="border-b-2 border-transparent hover:border-foreground transition-all duration-200">ABOUT</Link></li>
                         <li><Link href="#projects" className="border-b-2 border-transparent hover:border-foreground transition-all duration-200">PROJECTS</Link></li>
-                        <li><Link href="#blog" className="border-b-2 border-transparent hover:border-foreground transition-all duration-200">BLOG</Link></li>
+                        <li><Link href="#contact" className="border-b-2 border-transparent hover:border-foreground transition-all duration-200">CONTACT</Link></li>
                     </ul>
                 </nav>
             </div>
