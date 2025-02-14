@@ -17,14 +17,14 @@ export default function Contact() {
         value: "@cristina.csv",
         link: "https://www.instagram.com/cristina.csv",
         },
-        {
-        title: "GITHUB",
-        value: "cristinasevi",
-        link: "https://github.com/cristinasevi",
-        },
+        // {
+        // title: "GITHUB",
+        // value: "github.com/cristinasevi",
+        // link: "https://github.com/cristinasevi",
+        // },
         {
         title: "LINKEDIN",
-        value: "cristinasevi",
+        value: "in/cristinasevi",
         link: "https://www.linkedin.com/in/cristinasevi",
         },
     ]
