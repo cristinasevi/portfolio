@@ -17,11 +17,11 @@ export default function Contact() {
         value: "@cristina.csv",
         link: "https://www.instagram.com/cristina.csv",
         },
-        // {
-        // title: "GITHUB",
-        // value: "github.com/cristinasevi",
-        // link: "https://github.com/cristinasevi",
-        // },
+        {
+        title: "GITHUB",
+        value: "github.com/cristinasevi",
+        link: "https://github.com/cristinasevi",
+        },
         {
         title: "LINKEDIN",
         value: "in/cristinasevi",
@@ -50,8 +50,8 @@ export default function Contact() {
                     whileHover={{ x: 20 }}
                     transition={{ duration: 0.2 }}
                     >
-                    <div className="flex items-center justify-between border-b border-[#333] py-4">
-                        <span className="text-lg uppercase">{contact.title}</span>
+                    <div className="flex items-center justify-between border-b border-gray-200 dark:border-[#333] py-4"> 
+                        <span className="text-lg text-gray-800 dark:text-gray-200 uppercase">{contact.title}</span>
                         <span
                         className={`text-sm transition-colors duration-300 ${
                             hoveredIndex === index ? "text-blue-500" : "text-[#666]"
