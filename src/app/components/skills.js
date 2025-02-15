@@ -46,7 +46,7 @@ export default function Skills() {
   return (
     <section id="skills" className="w-full min-h-screen flex items-center justify-center px-6 md:px-16">
       <div className="max-w-6xl w-full">
-        <h2 className="text-6xl md:text-8xl text-[#0000FF] font-normal tracking-tighter scale-y-200 origin-top mb-32">
+        <h2 className="text-6xl md:text-8xl text-[#0000FF] font-normal tracking-tighter scale-y-200 origin-top mb-16 md:mb-32">
           <span className="block">my</span>
           <span className="block">skills</span>
         </h2>
