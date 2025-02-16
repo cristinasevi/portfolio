@@ -10,8 +10,7 @@ export default function About() {
           <p className="text-2xl md:text-[2.5rem] font-light leading-normal">
             WITH A SPECIAL INTEREST IN <span className="text-[#0000FF] font-normal">UI/UX </span>
             AND A GREAT PASSION FOR DESIGN,
-            GRID, TYPE, AND BEING <span className="text-[#0000FF] font-normal">BOLD AND
-            MINIMAL</span> AT THE SAME TIME.
+            GRID, AND TYPE.
           </p>
           <p className="text-2xl md:text-[2.5rem] font-light leading-normal">
             MY FOCUS IS ON BLENDING

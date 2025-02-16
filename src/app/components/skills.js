@@ -100,10 +100,10 @@ export default function Skills() {
                 }}
                 className="relative group"
               >
-                <div className="border border-gray-200 dark:border-[#333] rounded-lg p-6 transition-all duration-300 h-full bg-white dark:bg-black/5">
+                <div className="border border-gray-200 dark:border-[#333] rounded-lg p-4 md:p-6 transition-all duration-300 h-full bg-white dark:bg-black/5">
                   <div className="relative z-10 flex flex-col items-center gap-4 text-center">
                     <skill.icon className="w-6 h-6 text-gray-700 dark:text-gray-300 dark:group-hover:text-white group-hover:text-black transition-colors duration-300" />
-                    <span className="relative z-10 text-gray-800 dark:text-gray-200 dark:group-hover:text-white group-hover:text-black transition-colors duration-300 text-sm">
+                    <span className="relative z-10 text-sm text-gray-800 dark:text-gray-200 dark:group-hover:text-white group-hover:text-black transition-colors duration-300">
                       {skill.name}
                     </span>
                   </div>

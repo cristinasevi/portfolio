@@ -12,12 +12,14 @@ const inter = Inter({
 
 export const metadata = {
   title: "cristinasevi",
-  description: "Personal web",
+  description: "Web Designer & Developer based in Zaragoza, Spain. Specialized in creating engaging, accessible, and user-friendly digital experiences.",
+  keywords: ["cristinasevi", "web design", "web development", "front-end developer", "UI/UX", "portfolio", "projects"],
+  author: "Cristina Serrano Vicente",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" translate="no" className="scroll-smooth">
       <body className={`${inter.variable} antialiased`}>
         <Header/>
         {children}

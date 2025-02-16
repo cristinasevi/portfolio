@@ -8,8 +8,7 @@ import Image from "next/image"
 const projects = [
   {
     title: "Paint95",
-    description:
-      "Relive the classic Windows 95 Paint in your browser.",
+    description: "Relive the classic Windows 95 Paint in your browser.",
     image: "/images/paint95.png",
     link: "https://paint95.cristinasevi.com/",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -17,30 +16,25 @@ const projects = [
 ]
 
 export default function Projects() {
-  const [currentProject, setCurrentProject] = useState(0)
+    const [currentProject, setCurrentProject] = useState(0)
 
-  const nextProject = () => {
-    setCurrentProject((prev) => (prev + 1) % projects.length)
-  }
+    const nextProject = () => {
+        setCurrentProject((prev) => (prev + 1) % projects.length)
+    }
 
-  const previousProject = () => {
-    setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length)
-  }
+    const previousProject = () => {
+        setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length)
+    }
 
-  const formatPageNumber = (number) => {
-    return String(number).padStart(2, "0")
-  }
+    const formatPageNumber = (number) => {
+        return String(number).padStart(2, "0")
+    }
 
     return (
         <section id="projects" className="w-full min-h-screen flex items-center justify-center px-6 md:px-16">
             <div className="max-w-7xl w-full">
-                {/* <h2 className="text-6xl md:text-8xl text-[#0000FF] font-normal tracking-tighter scale-y-200 origin-top mb-32">
-                    <span className="block">my</span>
-                    <span className="block">work</span>
-                </h2> */}
-
                 {/* Mobile View (Carousel) */}
-                <div className="md:hidden">
+                <div className="md:hidden mt-16 relative min-h-[calc(100vh-8rem)]">
                     <div className="relative">
                         <motion.div
                         key={currentProject}
@@ -88,36 +82,36 @@ export default function Projects() {
                             </a>
                         </div>
                         </motion.div>
+                    </div>
 
-                        {/* Navigation Arrows with Page Numbers */}
-                        <div className="flex justify-center items-center gap-8 mt-8">
-                            <button
-                                onClick={previousProject}
-                                className="p-2"
-                                aria-label="Previous project"
+                    {/* Navigation Arrows with Page Numbers */}
+                    <div className="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-8">
+                        <button
+                            onClick={previousProject}
+                            className="p-2"
+                            aria-label="Previous project"
+                        >
+                            <ChevronLeft className="w-6 h-6" />
+                        </button>
+
+                        <div className="min-w-[60px] text-center">
+                            <motion.span
+                            key={currentProject}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="text-sm"
                             >
-                                <ChevronLeft className="w-6 h-6" />
-                            </button>
-
-                            <div className="min-w-[60px] text-center">
-                                <motion.span
-                                key={currentProject}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                className="text-sm"
-                                >
-                                {formatPageNumber(currentProject + 1)}/{formatPageNumber(projects.length)}
-                                </motion.span>
-                            </div>
-
-                            <button
-                                onClick={nextProject}
-                                className="p-2"
-                                aria-label="Next project"
-                            >
-                                <ChevronRight className="w-6 h-6" />
-                            </button>
+                            {formatPageNumber(currentProject + 1)}/{formatPageNumber(projects.length)}
+                            </motion.span>
                         </div>
+
+                        <button
+                            onClick={nextProject}
+                            className="p-2"
+                            aria-label="Next project"
+                        >
+                            <ChevronRight className="w-6 h-6" />
+                        </button>
                     </div>
                 </div>
 
@@ -134,14 +128,19 @@ export default function Projects() {
                         >
 
                         <div className="relative aspect-square w-full rounded-lg overflow-hidden bg-[var(--badge)]">
-                            <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover transition-transform duration-300 hover:scale-105" />
+                            <Image 
+                                src={project.image || "/placeholder.svg"} 
+                                alt={project.title} 
+                                fill 
+                                className="object-cover transition-transform duration-300 hover:scale-105" 
+                            />
                         </div>
 
                         <div className="space-y-4">
                             {/* <span className="mt-6 text-lg">{String(index + 1).padStart(2, "0")}</span> */}
                             <h3 className="text-xl">{project.title}</h3>
                             <p className="text-[#666] text-base leading-relaxed">
-                                {project.description.length > 100 
+                                {project.description.length > 300 
                                 ? project.description.slice(0, 85) + "..." 
                                 : project.description}
                             </p>

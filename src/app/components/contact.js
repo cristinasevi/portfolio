@@ -12,11 +12,11 @@ export default function Contact() {
         value: "hello@cristinasevi.com",
         link: "mailto:hello@cristinasevi.com",
         },
-        {
-        title: "INSTAGRAM",
-        value: "@cristina.csv",
-        link: "https://www.instagram.com/cristina.csv",
-        },
+        // {
+        // title: "INSTAGRAM",
+        // value: "@cristina.csv",
+        // link: "https://www.instagram.com/cristina.csv",
+        // },
         {
         title: "GITHUB",
         value: "github.com/cristinasevi",
