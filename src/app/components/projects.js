@@ -85,7 +85,7 @@ export default function Projects() {
                     </div>
 
                     {/* Navigation Arrows with Page Numbers */}
-                    <div className="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-8">
+                    <div className="absolute bottom-2 left-0 right-0 flex justify-center items-center gap-8">
                         <button
                             onClick={previousProject}
                             className="p-2"
