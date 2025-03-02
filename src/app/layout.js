@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/header";
 
@@ -9,6 +10,12 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
+
+export const SuisseIntlMedium = localFont({
+  src: "../../public/fonts/SuisseIntl-Bold-WebXL.woff2",
+  display: "swap",
+  adjustFontFallback: true,
+})
 
 export const metadata = {
   title: "cristinasevi",

@@ -3,25 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --background-scroll: #cecece;
-  --scrollbar-track: #ebebeb;
-  --scrollbar-thumb: #cecece;
-  --scrollbar-thumb-hover: #a0a0a0;
-  --badge: #d9d9d9;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --background-scroll: #1e1e1e;
-    --scrollbar-track: #121212;
-    --scrollbar-thumb: #333;
-    --scrollbar-thumb-hover: #555;
-    --badge: #302F31;
-  }
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --background-scroll: #1e1e1e;
+  --scrollbar-track: #121212;
+  --scrollbar-thumb: #333;
+  --scrollbar-thumb-hover: #555;
+  --badge: #302F31;
 }
 
 @layer base {
