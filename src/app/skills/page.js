@@ -1,4 +1,5 @@
 "use client"
+import { SuisseIntlMedium } from "../fonts"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
@@ -46,20 +47,20 @@ export default function Skills() {
   return (
     <section id="skills" className="w-full min-h-screen flex items-center justify-center px-6 md:px-16">
       <div className="max-w-6xl w-full">
-        <h2 className="text-6xl md:text-8xl text-[#0000FF] font-normal tracking-tighter scale-y-200 origin-top mb-16 md:mb-32">
+        <h2 className={`${SuisseIntlMedium.className} text-6xl md:text-8xl text-[#0055FF] font-normal tracking-tighter scale-y-200 origin-top mb-16 md:mb-32`}>
           <span className="block">my</span>
           <span className="block">skills</span>
         </h2>
 
         <div className="space-y-16">
-          <div className="flex flex-wrap gap-8">
+          <div className={`${SuisseIntlMedium.className} flex flex-wrap gap-8`}>
             {Object.keys(skills).map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
                 className={`text-xl relative px-4 py-2 transition-colors duration-300 ${
                   activeCategory === category
-                    ? "text-[#0000FF]"
+                    ? "text-[#0055FF]"
                     : "text-gray-600 dark:text-[#666] hover:text-gray-800 dark:hover:text-[#888]"
                 }`}
               >
@@ -67,7 +68,7 @@ export default function Skills() {
                 {activeCategory === category && (
                   <motion.div
                     layoutId="underline"
-                    className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#0000FF]"
+                    className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#0055FF]"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.3 }}

@@ -22,11 +22,11 @@ export default function About() {
       <motion.div style={{ opacity, scale }} className="max-w-3xl w-full flex flex-col items-center">
         <div className="space-y-7 md:space-y-12">
           <p className="text-2xl md:text-[2.5rem] font-light leading-normal">
-            HI! I'M <span className="text-[#0000FF] font-normal">CRIS</span> — <span className="text-[#0000FF] font-normal">WEB DESIGNER &
+            HI! I'M <span className="text-[#0055FF] font-normal">CRIS</span> — <span className="text-[#0055FF] font-normal">WEB DESIGNER &
             DEVELOPER</span> BASED IN ZARAGOZA.
           </p>
           <p className="text-2xl md:text-[2.5rem] font-light leading-normal">
-            WITH A SPECIAL INTEREST IN <span className="text-[#0000FF] font-normal">UI/UX </span>
+            WITH A SPECIAL INTEREST IN <span className="text-[#0055FF] font-normal">UI/UX </span>
             AND A GREAT PASSION FOR DESIGN,
             GRID, AND TYPE.
           </p>
@@ -35,7 +35,7 @@ export default function About() {
             DESIGN AND DEVELOPMENT TO
             BUILD DIGITAL EXPERIENCES
             THAT ARE BOTH VISUALLY
-            APPEALING AND <span className="text-[#0000FF] font-normal">USER-FRIENDLY</span>.
+            APPEALING AND <span className="text-[#0055FF] font-normal">USER-FRIENDLY</span>.
           </p>
         </div>
       </motion.div>

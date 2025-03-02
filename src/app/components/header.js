@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SuisseIntlMedium } from "../layout";
+import { SuisseIntlMedium } from "../fonts";
 
 export default function Header() {
   return (
@@ -7,17 +7,17 @@ export default function Header() {
       <nav>
         <ul className="flex items-center justify-between md:justify-end md:gap-8 text-foreground px-8 md:px-0 max-w-md mx-auto md:mx-0">
           <li>
-            <Link href="/about" className="hover:text-[#0055FF]">
+            <Link href="#about" className="hover:text-[#0055FF]">
               about
             </Link>
           </li>
           <li>
-            <Link href="/projects" className="hover:text-[#0055FF]">
+            <Link href="#projects" className="hover:text-[#0055FF]">
               projects
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-[#0055FF]">
+            <Link href="#contact" className="hover:text-[#0055FF]">
               contact
             </Link>
           </li>

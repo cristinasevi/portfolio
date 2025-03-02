@@ -1,5 +1,7 @@
 "use client"
 
+import { SuisseIntlMedium } from "../fonts"
+
 import { useState } from "react"
 import { motion } from "framer-motion"
 
@@ -32,7 +34,7 @@ export default function Contact() {
     return (
         <section id="contact" className="w-full min-h-screen flex flex-col items-center justify-center px-6 md:px-16">
             <div className="max-w-2xl w-full">
-                <p className="text-6xl md:text-8xl text-[#0000FF] font-normal tracking-tighter scale-y-200 origin-top mb-32">
+                <p className={`${SuisseIntlMedium.className} text-6xl md:text-8xl text-[#0055FF] font-normal tracking-tighter scale-y-200 origin-top mb-32`}>
                 <span className="block">let's</span>
                 <span className="block">connect</span>
                 </p>
@@ -51,7 +53,7 @@ export default function Contact() {
                     transition={{ duration: 0.2 }}
                     >
                     <div className="flex items-center justify-between border-b border-gray-200 dark:border-[#333] py-4"> 
-                        <span className="text-lg text-gray-800 dark:text-gray-200 uppercase">{contact.title}</span>
+                        <span className={`${SuisseIntlMedium.className} text-lg text-gray-800 dark:text-gray-200 uppercase`}>{contact.title}</span>
                         <span
                         className={`text-sm transition-colors duration-300 ${
                             hoveredIndex === index ? "text-blue-500" : "text-[#666]"

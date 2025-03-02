@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { SuisseIntlMedium } from "./layout"
-import About from "./components/about"
-import Skills from "./components/skills"
-import Projects from "./components/projects"
-import Contact from "./components/contact"
+import { SuisseIntlMedium } from "./fonts"
+import About from "./about/page"
+import Skills from "./skills/page"
+import Projects from "./projects/page"
+import Contact from "./contact/page"
 
 export default function Home() {
   return (
@@ -19,11 +19,10 @@ export default function Home() {
           </h1>
         </div>
       </main>
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
     </>
   )
 }
-
