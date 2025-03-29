@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { Mail, Linkedin, Github } from "lucide-react"
+import { Mail, Linkedin as LinkedinIcon, Github as GithubIcon } from "lucide-react"
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("Cristina Sevi")
@@ -94,7 +94,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/10"
               >
-                <Linkedin className="w-5 h-5" />
+                <LinkedinIcon className="w-5 h-5" />
               </a>
 
               {/* <a
@@ -103,7 +103,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/10"
               >
-                <Github className="w-5 h-5" />
+                <GithubIcon className="w-5 h-5" />
               </a> */}
             </div>
           </div>

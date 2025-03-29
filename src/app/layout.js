@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" translate="no" className="scroll-smooth">
       <body className={`${inter.variable} antialiased`}>
-        {/* <Header/> */}
         {children}
         <Analytics/>
         <SpeedInsights/>
