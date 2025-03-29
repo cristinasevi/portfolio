@@ -1,10 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
-import { SuisseIntlMedium } from "../fonts"
 
 export default function Header() {
   return (
-    <header className={`${SuisseIntlMedium.className} fixed top-0 w-full pt-6 px-8 md:px-13 z-50`}>
+    <header className="fixed top-0 w-full pt-6 px-8 md:px-13 z-50">
       <nav className="flex justify-between items-center max-w-[1920px] mx-auto">
         <div className="flex-shrink-0">
           <Link href="/" className="block p-1 hover:opacity-80 transition-opacity">
