@@ -3,7 +3,10 @@
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-import { Mail, Linkedin } from "lucide-react"
+import { Mail, Linkedin, Github } from "lucide-react"
+import Button from "./components/ui/button"
+import Link from "./components/ui/link"
+import Projects from "./projects/page"
 
 export default function Home() {
   const router = useRouter()
@@ -141,40 +144,22 @@ export default function Home() {
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              <button
-                onClick={navigateToProjects}
-                className="bg-[#005EFE] hover:bg-[#0050d9] text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-300 ease-in-out whitespace-nowrap inline-block"
-              >
+              <Button onClick={navigateToProjects}>
                 View Projects
-              </button>
+              </Button>
 
               <div className="flex items-center gap-4">
-                <a
-                  href="mailto:hello@cristinasevi.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/10"
-                >
+                <Link href="mailto:hello@cristinasevi.com">
                   <Mail className="w-5 h-5" />
-                </a>
+                </Link>
 
-                <a
-                  href="https://linkedin.com/in/cristinasevi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/10"
-                >
+                <Link href="https://linkedin.com/in/cristinasevi">
                   <Linkedin className="w-5 h-5" />
-                </a>
+                </Link>
 
-                {/* <a
-                  href="https://github.com/cristinasevi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center transition-colors duration-300 ease-in-out hover:bg-white/10"
-                >
+                {/* <Link href="https://github.com/cristinasevi">
                   <Github className="w-5 h-5" />
-                </a> */}
+                </Link> */}
               </div>
             </div>
           </div>
