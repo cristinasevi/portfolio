@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 import { Mail, Linkedin, Github } from "lucide-react"
 import Button from "./components/ui/button"
 import Link from "./components/ui/link"
-import Projects from "./projects/page"
+// import Projects from "./projects/page"
 
 export default function Home() {
   const router = useRouter()
