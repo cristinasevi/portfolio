@@ -98,18 +98,21 @@ export default function Home() {
             }`}
           >
             {/* Profile display */}
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/10">
-              <div className="w-6 h-6 rounded-full overflow-hidden flex items-center justify-center bg-white/10 border border-white/10">
+            <div className="flex items-center gap-2 py-2">
+              <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-white/10 border border-white/10">
                 <Image
                   src="/images/avatar-hover.jpg"
                   alt="Profile"
-                  width={48}
-                  height={48}
+                  width={100}
+                  height={100}
                   className="object-cover min-w-full min-h-full"
                   quality={100}
                 />
               </div>
-              <span className="text-sm font-medium">Cristina Sevi</span>
+              <div className="flex flex-col">
+                <span className="text-base font-semibold">Cristina Sevi</span>
+                <span className="text-sm font-medium text-white/60">Zaragoza, Spain</span>
+              </div>
             </div>
           </div>
 
@@ -152,15 +155,15 @@ export default function Home() {
               </Button>
 
               <div className="flex items-center gap-4">
-                <Link href="mailto:hello@cristinasevi.com">
+                <Link href="mailto:hello@cristinasevi.com" aria-label="Send email to Cristina">
                   <Mail className="w-5 h-5" />
                 </Link>
 
-                <Link href="https://linkedin.com/in/cristinasevi">
+                <Link href="https://linkedin.com/in/cristinasevi" aria-label="Visit LinkedIn profile">
                   <Linkedin className="w-5 h-5" />
                 </Link>
 
-                {/* <Link href="https://github.com/cristinasevi">
+                {/* <Link href="https://github.com/cristinasevi" aria-label="Visit GitHub profile">
                   <Github className="w-5 h-5" />
                 </Link> */}
               </div>

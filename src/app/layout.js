@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "cristinasevi",
-  description: "Web Designer & Developer based in Zaragoza, Spain. Specialized in creating engaging, accessible, and user-friendly digital experiences.",
+  description: "Front-End Developer & UI/UX Designer based in Zaragoza, Spain. Specialized in creating engaging, accessible, and user-friendly digital experiences.",
   keywords: ["cristinasevi", "web design", "web development", "front-end developer", "UI/UX", "portfolio", "projects"],
   author: "Cristina Serrano Vicente",
 };
