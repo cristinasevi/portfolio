@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" translate="no" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} antialiased`}>
         {children}
         <Analytics/>

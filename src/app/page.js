@@ -120,8 +120,11 @@ export default function Home() {
                 isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              <h1 className="text-4xl font-extrabold">Front-end</h1>
-              <h2 className="text-4xl font-extrabold">Developer</h2>
+              <h1 className="text-4xl font-extrabold">
+                <span>Front-end</span>
+                <br/>
+                <span>Developer</span>
+              </h1>
             </div>
 
             <div
