@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { Mail, Linkedin, Github } from "lucide-react"
-import Button from "./components/ui/button"
+import Button from "./components/ui/buttons"
 import Link from "./components/ui/link"
-// import Projects from "./projects/page"
+import ProjectsPage from "./projects/page"
 
 export default function Home() {
   const router = useRouter()
@@ -173,9 +173,9 @@ export default function Home() {
       </main>
 
       {/* Projects section */}
-      {/* <section className={`min-h-screen flex items-center justify-center p-4 relative transition-opacity duration-500`}>
-        <Projects/>
-      </section> */}
+      <section>
+        <ProjectsPage/>
+      </section>
     </div>
   )
 }
