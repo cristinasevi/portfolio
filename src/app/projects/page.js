@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { BlurButton, TryButton } from "../components/ui/buttons"
 import { ArrowUpRight } from "lucide-react"
@@ -11,7 +13,7 @@ export default function ProjectsPage() {
       imageUrl: "/images/offgrid.png",
       altText: "Offgrid - Design System",
       website: "https://offgrid.cristinasevi.com/effects/color-palette"
-    }
+    },
   ];
   
   return (
