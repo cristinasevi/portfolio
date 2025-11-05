@@ -31,12 +31,12 @@
     color: var(--foreground);
     background: var(--background);
     font-family: var(--font-inter), sans-serif;
-    cursor: url("/images/cursor.svg"), auto;
+    cursor: auto;
   }
 
   a,
   button {
-    cursor: url("/images/pointer.svg"), pointer;
+    cursor: pointer;
   }
 }
 

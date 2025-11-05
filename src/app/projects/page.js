@@ -19,6 +19,9 @@ export default function ProjectsPage() {
   return (
     <main className="min-h-screen py-20 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <ProjectCard
@@ -82,6 +85,8 @@ function ProjectCard({ title, subtitle, imageUrl, altText, website }) {
             alt={altText} 
             fill 
             className="object-cover bg-[#999]" 
+            loading="lazy" quality={70}
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           
           <div className="absolute bottom-5 right-6 z-20">

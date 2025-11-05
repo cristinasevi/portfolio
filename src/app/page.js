@@ -106,7 +106,7 @@ export default function Home() {
                   width={100}
                   height={100}
                   className="object-cover min-w-full min-h-full"
-                  quality={100}
+                  quality={60}
                 />
               </div>
               <div className="flex flex-col">
@@ -124,9 +124,7 @@ export default function Home() {
               }`}
             >
               <h1 className="text-4xl font-extrabold">
-                <span>Front-end</span>
-                <br/>
-                <span>Developer</span>
+                Front-end Developer
               </h1>
             </div>
 
